@@ -10,13 +10,11 @@ return require('packer').startup(function(use)
         -- or                            , branch = '0.1.x',
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
-    use {
-        "phha/zenburn.nvim",
-        config = function() require("zenburn").setup() end
-    }
     use 'wbthomason/packer.nvim'
     use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
     use("nvim-treesitter/playground")
+    use("simrat39/rust-tools.nvim")
+    use('simrat39/inlay-hints.nvim')
     use("theprimeagen/harpoon")
     use("theprimeagen/refactoring.nvim")
     use("mbbill/undotree")
@@ -24,14 +22,17 @@ return require('packer').startup(function(use)
     use("nvim-treesitter/nvim-treesitter-context")
     use('feline-nvim/feline.nvim')
     use('nvim-tree/nvim-web-devicons')
+    use("cpea2506/one_monokai.nvim")
+    use("windwp/nvim-autopairs")
+    use {
+        'numToStr/Comment.nvim',
+        config = function()
+            require('Comment').setup()
+        end
+    }
     use({
         "kylechui/nvim-surround",
         tag = "*", -- Use for stability; omit to use `main` branch for the latest features
-        config = function()
-            require("nvim-surround").setup({
-                -- Configuration here, or leave empty to use defaults
-            })
-        end
     })
     use {
         'VonHeikemen/lsp-zero.nvim',

@@ -74,6 +74,12 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["Comment.nvim"] = {
+    config = { "\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0" },
+    loaded = true,
+    path = "/home/Zion/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "/home/Zion/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -119,6 +125,11 @@ _G.packer_plugins = {
     path = "/home/Zion/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
+  ["inlay-hints.nvim"] = {
+    loaded = true,
+    path = "/home/Zion/.local/share/nvim/site/pack/packer/start/inlay-hints.nvim",
+    url = "https://github.com/simrat39/inlay-hints.nvim"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/Zion/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
@@ -134,6 +145,11 @@ _G.packer_plugins = {
     path = "/home/Zion/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["nvim-autopairs"] = {
+    loaded = true,
+    path = "/home/Zion/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/Zion/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -145,7 +161,6 @@ _G.packer_plugins = {
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-surround"] = {
-    config = { "\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18nvim-surround\frequire\0" },
     loaded = true,
     path = "/home/Zion/.local/share/nvim/site/pack/packer/start/nvim-surround",
     url = "https://github.com/kylechui/nvim-surround"
@@ -164,6 +179,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/Zion/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
+  },
+  ["one_monokai.nvim"] = {
+    loaded = true,
+    path = "/home/Zion/.local/share/nvim/site/pack/packer/start/one_monokai.nvim",
+    url = "https://github.com/cpea2506/one_monokai.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -185,6 +205,11 @@ _G.packer_plugins = {
     path = "/home/Zion/.local/share/nvim/site/pack/packer/start/refactoring.nvim",
     url = "https://github.com/theprimeagen/refactoring.nvim"
   },
+  ["rust-tools.nvim"] = {
+    loaded = true,
+    path = "/home/Zion/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
+    url = "https://github.com/simrat39/rust-tools.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/Zion/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -199,24 +224,14 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/Zion/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
-  },
-  ["zenburn.nvim"] = {
-    config = { "\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fzenburn\frequire\0" },
-    loaded = true,
-    path = "/home/Zion/.local/share/nvim/site/pack/packer/start/zenburn.nvim",
-    url = "https://github.com/phha/zenburn.nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: zenburn.nvim
-time([[Config for zenburn.nvim]], true)
-try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fzenburn\frequire\0", "config", "zenburn.nvim")
-time([[Config for zenburn.nvim]], false)
--- Config for: nvim-surround
-time([[Config for nvim-surround]], true)
-try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18nvim-surround\frequire\0", "config", "nvim-surround")
-time([[Config for nvim-surround]], false)
+-- Config for: Comment.nvim
+time([[Config for Comment.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
+time([[Config for Comment.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

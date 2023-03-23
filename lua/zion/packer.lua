@@ -10,6 +10,7 @@ return require('packer').startup(function(use)
         -- or                            , branch = '0.1.x',
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
+    use({ "neanias/everforest-nvim" })
     use "folke/neodev.nvim"
     use 'mfussenegger/nvim-dap'
     use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
@@ -26,6 +27,8 @@ return require('packer').startup(function(use)
     use('feline-nvim/feline.nvim')
     use('nvim-tree/nvim-web-devicons')
     use("cpea2506/one_monokai.nvim")
+    use 'tanvirtin/monokai.nvim'
+    use({ 'rose-pine/neovim', as = 'rose-pine' })
     use("windwp/nvim-autopairs")
     use {
         'numToStr/Comment.nvim',

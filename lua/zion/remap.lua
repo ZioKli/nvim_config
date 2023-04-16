@@ -36,4 +36,5 @@ vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.config/nvim/lua/zion/packer.lua<CR
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
+vim.api.nvim_set_keymap('n', ':', '<cmd>FineCmdline<CR>', {noremap = true})
 
